@@ -13,11 +13,14 @@ function loadData() {
       document.querySelector('.latitude').value
     }&lon=${document.querySelector('.longitude').value}&FcstType=json`
   )
+    // fetch(
+    //   `https://forecast.weather.gov/MapClick.php?lat=38.4247341&lon=-86.9624086&FcstType=json`
+    // )
     .then(response => response.json())
     .then(request => {
       let threeDay = '';
-      let weatherLocation = request.location;
       console.log(request.location);
+      console.log('test');
       threeDay += `
         <div class="col s3 offset-s1">
           <div class="card">
@@ -93,7 +96,7 @@ function loadData() {
               </ul>
             </div>
           </div>
-      </div>
+        </div>
         `;
 
       document.querySelector('.weather-cards').innerHTML = threeDay;

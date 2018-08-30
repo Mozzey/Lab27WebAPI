@@ -22,67 +22,31 @@
           <h5>Sample Coords : Lat = 42.9634, Lon = -85.6681</h5>
           <form class="col s12 black">
             <div class="input-field col s3 offset-s2">
-              <input type="text" class="validate latitude white-text">
-              <label for="icon_prefix">Latitude</label>
+              <input id="lat" type="text" class="validate latitude white-text">
+              <label for="lat">Latitude</label>
             </div>
             <div class="input-field col s3">
-              <input type="text" class="validate longitude white-text">
-              <label for="icon_telephone">Longitude</label>
+              <input id="long" type="text" class="validate longitude white-text">
+              <label for="long">Longitude</label>
             </div>
             <div class="input-field col s4">
-              <button class="btn waves-effect waves-light grey lighten-4 black-text col s3" name="action" onclick="loadData()">Submit
+              <button type="button" onclick="loadData()">click</button>
+              <button type="button" class="btn waves-effect waves-light grey lighten-4 black-text col s3" name="action" onclick="loadData()">Submit
               </button>
             </div>
           </form>
         </div>
       </div>
-      <div class="row weather-cards">
-        <!-- <div class="col s3 offset-s1">
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="./imgs/sunny.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4 current"></span>
-              <div class="monday"></div>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4 temperature"><i class="material-icons right">X</i></span>
-              <ul class="currentWeather"></ul>
-            </div>
-          </div>
-        </div>
-        <div class="col s3">
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="./imgs/rainy.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4 next-one"></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">X</i></span>
-              <ul class="tonightWeather"></ul>
-            </div>
-          </div>
-        </div>
-        <div class="col s3">
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="./imgs/cloudy.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4 next-two"></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">X</i></span>
-              <ul class="tomorrowWeather"></ul>
-            </div>
-          </div>
-        </div> -->
-      </div>
-
+    </div>
   </header>
+
+  <div class="row">
+    <div class="col s12">
+      <div class="row weather-cards" id="weather">
+
+      </div>
+    </div>
+  </div>
 
 
 
