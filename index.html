@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="main.css">
+  <title>GC Forecaster</title>
+</head>
+
+<body>
+  <header>
+    <div class="row center-align">
+      <div class="col s12">
+        <div class="row brand">
+          <h1>GC Weatherer</h1>
+        </div>
+        <div class="row">
+          <form class="col s12 black">
+            <div class="input-field col s3 offset-s2">
+              <input id="icon_prefix" type="text" class="validate latitude white-text">
+              <label for="icon_prefix">Latitude</label>
+            </div>
+            <div class="input-field col s3">
+              <input id="icon_telephone" type="tel" class="validate longitude white-text">
+              <label for="icon_telephone">Longitude</label>
+            </div>
+            <div class="input-field col s4">
+              <button onclick="loadData()">Click</button>
+              <button class="btn waves-effect waves-light blue col s3" name="action" onclick="loadData()">Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row weather-cards">
+        <!-- <div class="col s3 offset-s1">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="./imgs/sunny.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 current"></span>
+              <div class="monday"></div>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4 temperature"><i class="material-icons right">X</i></span>
+              <ul class="currentWeather"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="./imgs/rainy.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 next-one"></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">X</i></span>
+              <ul class="tonightWeather"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="./imgs/cloudy.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 next-two"></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">X</i></span>
+              <ul class="tomorrowWeather"></ul>
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+  </header>
+
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

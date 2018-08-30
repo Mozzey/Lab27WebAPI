@@ -1,0 +1,14 @@
+html {
+  margin: 0;
+}
+
+.brand {
+  margin: 0;
+  padding: 2rem;
+  background-image: url('./imgs/sunny.jpg');
+  font-size: 4rem;
+}
+
+h1 {
+  margin: 0;
+}
